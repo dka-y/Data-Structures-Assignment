@@ -1,11 +1,11 @@
-# Create an empty list to act as our Stack
+# Create an empty list to act as the Stack
 my_stack = []
 
 print("--- Simple Stack Manager (LIFO) ---")
 
 while True:
     # Display the current stack (top is the last item in the list)
-    print("\n--- Current Stack (Top at the top) ---")
+    print("\n--- Current Stack (Last at the top) ---")
     for item in reversed(my_stack):
         print(f"| {item} |")
     print("-------")
@@ -30,4 +30,5 @@ while True:
         print("Exiting stack demo...")
         break
     else:
+
         print("Invalid choice.")
