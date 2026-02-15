@@ -1,4 +1,5 @@
 # graphs are the structures that model relationships
+from collections import deque
 class Graph:
     def __init__ (self, directed=False ):
         
@@ -17,3 +18,35 @@ class Graph:
         self.graph[vertex1].append((vertex2, weight))
         if not self.directed:
           self.graph[vertex2].append((vertex1, weight))
+    # depth first search - basically going as deep as possible without backtracking
+    def dfs (self, start):
+
+        visited = set()
+        result = []
+
+        def dfs_helper(vertex):
+            visited.add(vertex)
+            result.append(vertex)
+            # the _ skips the weight
+            for neighbor, _ in self.graph.get(vertex, []):
+                if neighbor not in visited:
+                    dfs_helper(neighbor)
+        dfs_helper(start)
+        return result
+
+    #Breadth first search
+    def bfs(self, start):
+        visited = {start}
+        queue = deque([start])
+        result = []
+
+        while queue:
+            vertex = queue.popleft()
+            result.append(vrtex)
+
+            for neighbor, _ in self.graph.get(vertex, []):
+                if neighbornot in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+
+        return result
