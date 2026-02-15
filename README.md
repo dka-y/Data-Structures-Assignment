@@ -1,4 +1,4 @@
-# Data-Structures-Assignment
+# Linear Data Structures
 Linear data structures are data structures whose elements are stored in non-hierarchical way where each element has the
 successors and predecessors except the first and last element. There are four types namely: Arrays, Stacks, Linked Lists, and Queues as illustrated below.  
 
@@ -67,3 +67,20 @@ A node is typically represented as a record or object with two fields:
 - **Insert (at Head):** Creating a new node and making it the new Head.
 - **Insert (at Tail):** Traversing to the end to link a new node.
 - **Delete (at Head)** Moving the Head pointer to the second node
+
+# Non-linear Data Structures
+Non-linear data structures arrange data elements hierarchically or interconnectedly rather than sequentially, allowing for multi-level relationships
+There are two types of non-linear data structures namely: Trees and Graphs
+
+## Trees
+A Tree is a non-linear data structure representing a hierarchy. It consists of Nodes connected by Edges  
+Trees are chosen when you need to store data that has a natural hierarchy or when you need faster searching than a Linked List but more flexibility than a sorted Array.  
+
+**Real-World Analogy:** In companies, the CEO is at the top, Managers are below them, and individual contributors are at the bottom.  
+
+**Key Terminology**  
+- Root: The topmost node of the tree (the starting point).
+- Parent / Child: A node directly above another is the parent; the nodes below it are children.
+- Leaf: A node with no children (the "end" of a branch).
+- Subtree: Any node and all its descendants can be viewed as a smaller tree within the larger one.
+- Height: The number of edges on the longest path from the root to a leaf
