@@ -1,6 +1,6 @@
 from collections import deque
 
-# Using deque for O(1) performance (no shifting items in memory)
+# allows efficient popping and appending of elements
 my_queue = deque()
 
 print("--- Professional Queue Manager (FIFO) ---")
@@ -21,7 +21,7 @@ while True:
         else:
             print("Error: Input cannot be empty.")
 
-    # Dequeue removes the front item (the first one added) - FIFO
+    # Dequeue removes the front item 
     elif choice == "2":
         if my_queue:
             removed_item = my_queue.popleft() 
