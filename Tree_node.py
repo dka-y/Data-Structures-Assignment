@@ -19,12 +19,12 @@ class BinarySearchTree:
     def _insert_recursive(self, node, data):
         if data < node.data:
             if node.left is None:
-                node.left = BinaryTreeNode(data)
+                node.left = BinaryTree(data)
             else:
                 self._insert_recursive(node.left, data)
         else:
             if node.right is None:
-                node.right = BinaryTreeNode(data)
+                node.right = BinaryTree(data)
             else:
                 self._insert_recursive(node.right, data)
 
@@ -66,3 +66,16 @@ class BinarySearchTree:
             self._inorder_recursive(node.left, result)
             result.append(node.data)
             self._inorder_recursive(node.right, result)
+
+
+bst = BinarySearchTree()
+
+values = [50, 30, 70, 20, 40, 60, 80]
+for v in values:
+    bst.insert(v)
+
+print("Inorder traversal (sorted):", bst.inorder_traversal())
+
+    # Search tests
+print("Search 40:", bst.search(40))
+print("Search 100:", bst.search(100))
