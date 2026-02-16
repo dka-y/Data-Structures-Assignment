@@ -87,7 +87,7 @@ Trees are chosen when you need to store data that has a natural hierarchy or whe
 
 
 
-### Graphs
+## Graphs
 
 A Graph is a non-linear data structure consisting of a set of vertices (nodes) connected by edges.
 Graphs are chosen when you need to model complex relationships between entities that are not strictly hierarchical, such as networks, maps, or social connections.
