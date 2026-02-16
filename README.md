@@ -39,14 +39,14 @@ successors and predecessors except the first and last element. There are four ty
 
 **Definition:** A Queue is a linear data structure that operates on the First-In, First-Out (FIFO) principle. In a queue, the first element added is the first one to be removed, much like a real-life waiting line.
 
+**Real-world Analogy:** The first person to arrive at the counter in a coffee shop is the first person served.  
+
 **Key Characteristics:**
 
 - **Enqueue:** Adding an element to the back (rear) of the queue.  
 - **Dequeue:** Removing an element from the front of the queue.  
 - **Peek/Front:**	Returns the front element without removing it.  
 - **IsFull/isEmpty:** Checks the capacity or state of the queue
-
-**Real-world Analogy:** The first person to arrive at the counter in a coffee shop is the first person served.
 
 **Application:** Printer task scheduling - It ensures fairness. The first person to hit "Print" gets their document first.
 
@@ -81,7 +81,7 @@ A node is typically represented as a record or object with two fields:
 Non-linear data structures arrange data elements hierarchically or interconnectedly rather than sequentially, allowing for multi-level relationships
 There are two types of non-linear data structures namely: Trees and Graphs
 
-## Trees
+## 1. Trees
 A Tree is a non-linear data structure representing a hierarchy. It consists of Nodes connected by Edges  
 Trees are chosen when you need to store data that has a natural hierarchy or when you need faster searching than a Linked List but more flexibility than a sorted Array.  
 
@@ -96,7 +96,7 @@ Trees are chosen when you need to store data that has a natural hierarchy or whe
 
 **Application:** File systems (Folders/Subfolders) - Trees represent hierarchical data. A folder contains files, which might contain more folders.
 
-## Graphs
+## 2. Graphs
 A Graph is a non-linear data structure consisting of a set of vertices (nodes) connected by edges. They are used to model complex relationships between entities that are not strictly hierarchical, such as networks, maps, or social connections.
 
 **Real-World Analogy**: A social network where users are vertices and friendships or followers are edges. Similarly, cities are vertices and roads are edges in a transportation map.
